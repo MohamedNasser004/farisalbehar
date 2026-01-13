@@ -1,0 +1,31 @@
+.sidebar-wrapper {
+  position: relative;
+}
+
+.sidebar {
+  width: 250px;
+  transition: width 0.3s;
+  overflow: hidden;
+}
+
+.sidebar.closed {
+  width: 0;
+  padding: 0;
+}
+
+.sidebar.open {
+  border-left: 1px solid #ddd;
+}
+
+/* زر الفتح والقفل */
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  left: -75px; /* اتحرك من اليمين بدل اليسار */
+  z-index: 1000;
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
