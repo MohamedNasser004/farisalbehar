@@ -23,7 +23,7 @@ function EditComment({ id, setActiveComponent, setSelectedSlug }) {
 
     setLoading(true);
     axios
-      .get(`https://api.farisalbehar.com/comment/getById/${id}`)
+      .get(`http://localhost:7000/comment/getById/${id}`)
       .then((res) => {
         const commentData = res.data;
         setValues({

@@ -12,7 +12,7 @@ function AllComments({ setActiveComponent, setSelectedSlug }) {
 
   useEffect(() => {
     axios
-      .get("https://api.farisalbehar.com/comment/all")
+      .get("http://localhost:7000/comment/all")
       .then((res) => {
         setComments(res.data);
         setLoading(false);

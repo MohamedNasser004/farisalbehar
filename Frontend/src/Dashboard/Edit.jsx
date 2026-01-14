@@ -16,7 +16,7 @@ class MyUploadAdapter {
       data.append('upload', file);
       data.append('type', 'ckeditor');
 
-      return axios.post('https://api.farisalbehar.com/photo/upload', data, {
+      return axios.post('http://localhost:7000/photo/upload', data, {
         headers: {
           'Content-Type': 'multipart/form-data',
           'x-api-key':"farisalbeharSecretKeyFARISALBEHAR"
@@ -57,7 +57,7 @@ function Update({ slug, setActiveComponent }) {
 
  useEffect(() => {
   if (slug) {
-    axios.get(`https://api.farisalbehar.com/api/article/${slug}`, {
+    axios.get(`http://localhost:7000/api/article/${slug}`, {
       headers: {
         'x-api-key': 'farisalbeharSecretKeyFARISALBEHAR' // ← استبدلها بالمفتاح الفعلي بتاعك
       }

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import axiosInstance from '../services/axiosInstance';
 
-const API_BASE_URL = 'https://api.farisalbehar.com/api';
+const API_BASE_URL = 'http://localhost:7000/api';
 
 const api = axios.create({
   baseURL: API_BASE_URL,

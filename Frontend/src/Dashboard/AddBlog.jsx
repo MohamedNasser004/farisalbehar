@@ -15,7 +15,7 @@ class MyUploadAdapter {
             data.append('upload', file);
             data.append('type', 'ckeditor');
 
-            return axios.post('https://api.farisalbehar.com/photo/upload', data, {
+            return axios.post('http://localhost:7000/photo/upload', data, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

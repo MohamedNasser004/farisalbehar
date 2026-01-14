@@ -40,7 +40,7 @@ export default function ContactForm() {
     };
 
     try {
-      const res = await fetch('https://api.farisalbehar.com/contact/send/', {
+      const res = await fetch('http://localhost:7000/contact/send/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),

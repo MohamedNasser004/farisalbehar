@@ -15,7 +15,7 @@ function ReplyComment({ commentId, onBack }) {
     if (!commentId) return;
 
     axios
-      .get(`https://api.farisalbehar.com/comment/getById/${commentId}`)
+      .get(`http://localhost:7000/comment/getById/${commentId}`)
       .then((res) => {
         setOriginalComment(res.data);
         setLoading(false);
@@ -45,7 +45,7 @@ function ReplyComment({ commentId, onBack }) {
         commentStatus: "published",
       };
 
-      await axios.post(`https://api.farisalbehar.com/comment/add`, replyData, {
+      await axios.post(`http://localhost:7000/comment/add`, replyData, {
         headers: { "Content-Type": "application/json" },
       });
 

@@ -4,13 +4,12 @@ import Header from "./Header";
 export const revalidate = 0;
 
 async function getArticles() {
-  const ApiUrl = "https://api.farisalbehar.com/api/article/all";
+  const ApiUrl = "http://localhost:7000/api/article/all";
 
   const res = await fetch(ApiUrl, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
-      "x-api-key": "farisalbeharSecretKeyFARISALBEHAR",
     },
     cache: "no-store" // مهم لعدم التخزين
   });
@@ -34,7 +33,7 @@ export default async function Articles() {
 
               {/* الصورة */}
               <img
-                src={`https://api.farisalbehar.com${blog.photo}`}
+                src={`http://localhost:7000${blog.photo}`}
                 className="card-img-top"
                 alt={blog.title}
                 style={{ height: "220px", objectFit: "cover" }}
