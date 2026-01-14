@@ -27,7 +27,6 @@ api.interceptors.response.use(
 export const getBlogs = async () => {
   try {
      const headers = {
-      'x-api-key': 'farisalbeharSecretKeyFARISALBEHAR' // ← نفس القيمة اللي في .env على السيرفر
     };
     const response = await api.get('/article/all', {headers});
     return { data: response.data };
@@ -40,7 +39,6 @@ export const getBlogs = async () => {
 export const getBlogBySlug = async (slug) => {
   try {
     const headers = {
-      'x-api-key': 'farisalbeharSecretKeyFARISALBEHAR' // ← نفس القيمة اللي في .env على السيرفر
     };
 
     // First try with the slug as-is

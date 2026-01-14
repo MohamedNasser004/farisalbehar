@@ -12,10 +12,10 @@ const tajawal = Tajawal({
 
 export const metadata = {
   authors: [{ name: "شركة فارس البحار" }],
-  metadataBase: new URL("https://farisalbehar.com"),
+  metadataBase: new URL("http://localhost:3000"),
   title: "شركة فارس البحار",
   description: "لشحن و تصدير السيارات من السعودية الى مصر",
-  url: "https://farisalbehar.com",
+  url: "https://localhost:3000",
   siteName: "شركة فارس البحار",
   locale: "ar_EG",
   type: "website",
