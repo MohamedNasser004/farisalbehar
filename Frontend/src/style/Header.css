@@ -1,6 +1,5 @@
-/* Header.css */
 .navbar-nav {
-  gap: 10px; /* المسافة بين العناصر */
+  gap: 10px;
 }
 
 .nav-link {
@@ -9,20 +8,20 @@
 }
 
 .navbar-brand img {
-  max-width: 150px; /* حجم الصورة */
+  max-width: 150px; 
 }
 .bg {
-  width: 100%; /* أو أي عرض مناسب */
-  height: 700px; /* أو أي ارتفاع مناسب */
-  background-size: cover; /* لتغطية العنصر بالكامل */
+  width: 100%; 
+  height: 700px; 
+  background-size: cover; 
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex; /* تحويل الـ div لحاوية Flexbox */
-  flex-direction: column; /* ترتيب العناصر بداخله بشكل عمودي */
-  justify-content: center; /* توسيط العناصر رأسيًا على طول المحور الرئيسي (العمودي هنا) */
-  align-items: center; /* توسيط العناصر أفقيًا على طول المحور الثانوي (الأفقي هنا) */
-  text-align: center; /* توسيط النص داخل العناصر نفسها (للتوافق مع المتصفحات القديمة) */
-  color: white; /* تحديد لون الخط عشان يكون ظاهر على الخلفية */
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  text-align: center; 
+  color: white; 
 }
 
 @media (max-width: 676px) {
@@ -31,7 +30,7 @@
   }
 }
 .mainHeader{
-    margin-bottom: 10px; /* مسافة بسيطة بين العنوانين */
+    margin-bottom: 10px;
     font-size: 70px;
     font-weight: 800;
 }
